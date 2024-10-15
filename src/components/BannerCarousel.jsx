@@ -27,15 +27,17 @@ const BannerCarousel = () => {
     }
 
     return (
-        <div className="banner-carousel">
-            {banners.map((banner, index) => (
-                <div
-                    key={banner._id}
-                    className={`banner-slide ${index === currentIndex ? 'active' : ''}`}
-                    style={{ backgroundImage: `url(${banner.imageUrl})` }}
-                >
-                </div>
-            ))}
+        <div className='container'>
+            <div className="banner-carousel">
+                {banners.map((banner, index) => (
+                    <div
+                        key={banner._id}
+                        className={`banner-slide ${index === currentIndex ? 'active' : ''}`}
+                        style={{ backgroundImage: `url(${banner.imageUrl})` }}
+                    >
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };

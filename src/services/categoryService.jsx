@@ -25,7 +25,10 @@ const CategoryData = () => {
   if (error) return <div>Error: {error.message}</div>;
 
   return (
+    <div className="container">
+    <h3>Categorías</h3>
     <div className="category-container">
+      
       {categories.map((category) => (
         <div
           key={category._id}
@@ -37,6 +40,7 @@ const CategoryData = () => {
           <div className="category-title">{category.name}</div>
         </div>
       ))}
+    </div>
     </div>
   );
 };

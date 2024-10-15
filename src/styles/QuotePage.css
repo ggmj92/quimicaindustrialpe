@@ -1,0 +1,113 @@
+  .quote-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .product-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+  }
+  
+  .product-section input,
+  .product-section select,
+  .client-section select,
+  .add-product{
+    flex: 1;
+    min-width: 120px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #4a90e2;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .add-product {
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .client-section {
+    margin-top: 20px;
+  }
+  
+  .client-type {
+    margin-bottom: 20px;
+  }
+  
+  .client-type label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .client-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-left: 127px;
+    margin-right: 127px;
+  }
+  
+  .client-info input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #4a90e2;
+    background-color: #fff;
+  }
+  
+  .contact-method {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+  
+  .contact-method button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #4a90e2;
+    background: none;
+    color: #4a90e2;
+    cursor: pointer;
+  }
+  
+  .contact-method button.active {
+    background-color: #4a90e2;
+    color: white;
+  }
+  
+  .observations textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #4a90e2;
+    background-color: #fff;
+  }
+  
+  .terms {
+    display: flex;
+    align-items: center;
+  }
+  
+  .terms input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #357abd;
+  }
