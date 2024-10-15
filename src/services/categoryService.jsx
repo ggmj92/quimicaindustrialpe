@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../styles/CategoryCard.css";
 
 const CategoryData = () => {
   const [categories, setCategories] = useState([]);
@@ -24,21 +25,19 @@ const CategoryData = () => {
   if (error) return <div>Error: {error.message}</div>;
 
   return (
-    <>
-      <div>
-        <h1>Categorías</h1>
-        <ul>
-          {categories.map((category) => (
-            <li key={category._id}>
-              {category.name}
-              {category.images && category.images.site1 && (
-                <img src={category.images.site1} alt={category.name} />
-              )}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </>
+    <div className="category-container">
+      {categories.map((category) => (
+        <div
+          key={category._id}
+          className="category-card"
+          style={{
+            backgroundImage: `url(${category.images?.site1})`,
+          }}
+        >
+          <div className="category-title">{category.name}</div>
+        </div>
+      ))}
+    </div>
   );
 };
 
